@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	overflow: hidden;
+	font-family: sans-serif;
+
+}
+
+#gameScreen{
+	border: 5px solid #333;
+	border-radius: 3px;
+	position: absolute;
+	z-index: 800;
+	background: #5fcde4;
+}
+
+canvas{
+	image-rendering: pixelated;
+}
+.startScreen{
+	position: absolute;
+	left: 35%;
+	top: 25%;
+	z-index: 1000;
+}
+
+#dead{
+	position: absolute;
+	top: 150%;
+	font-size: 100px;
+	left: 50%;
+	transition: 1s;
+	z-index: 900;
+}
+#res{
+	position: absolute;
+	top: 150%;
+	left: 60%;
+	transition: 1s;
+	z-index: 850;
+	display: none;
+}
+
+#restart{
+	left: 60%;
+	top: 150%;
+	position: absolute;
+	transition: 1s;
+	z-index: 900;
+	display: none;
+}
+
+#Go{
+	position: absolute;
+	z-index: 10000;
+	left: 500px;
+	top: 170px;
+	background: white;
+	text-align: center;
+	border-radius: 5px;
+	opacity: 0%;
+	transition: 0.5s;
+	width: 30px;
+	height: 30px;
+	border-bottom: 5px solid gray;
+	animation: 3s shopButton alternate infinite;
+}
+
+img{
+	width: 60px;
+	height: 20px;
+}
+
+#enemy{
+	border-radius: 30px;
+	border: none;
+	outline: none;
+	font-size: 1em;
+}
+
+#start{
+	background: none;
+	border: none;
+	margin-top: 0%;
+}
+
+.startScreen button:hover{
+	animation: upNDown 1s alternate infinite;
+}
+
+.Decorations img{
+	position: absolute;
+	left: 50%;
+	top: 10%;
+	width: 500px;
+	height: 335px;
+	z-index: -1;
+	opacity: 30%;
+}
+
+@keyframes upNDown {
+	to{
+		margin-top: 3%;
+	}
+}
+
+@keyframes shopButton{
+	to{
+		top: 150px;
+	}
+}

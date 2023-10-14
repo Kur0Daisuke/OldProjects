@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GameMyself</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="GameIcons\shield.png"> 
+</head>
+<body>
+	<div class="startScreen">
+		<h1>Meat N' Metal</h1>
+		<p>Press AnyWhere in the box to start -></p>
+		<input type="text" id="enemy" placeholder="Count Of Enemy (Num)">
+		<button id="start" onclick="start()"><img src="GameIcons/button.png"></button>
+		<div class="Decorations">
+			<img src="Decor.png">
+		</div>
+	</div>
+	
+	<div class="gameContainer">
+		<div id="Go">|></div>
+		<canvas id="gameScreen" width="1000" height="450"></canvas>
+		<button onclick="restart()" id="restart">Restart</button><br>
+	</div>
+
+	<!-- Do Not Touch!(Warning : 69) -->
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="player.js"></script>
+	<script type="text/javascript" src="playerAssets.js"></script>
+	<script type="text/javascript" src="inventory.js"></script>
+	<script type="text/javascript" src="Entity.js"></script>
+	<script type="text/javascript" src="tree.js"></script>
+	<script type="text/javascript" src="keys.js"></script>
+</body>
+</html>
