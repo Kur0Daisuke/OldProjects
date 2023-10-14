@@ -1,0 +1,145 @@
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #333;
+	overflow: hidden;
+	font-family: sans-serif;
+}
+
+.wrapper{
+	position: absolute;
+	margin-top: 150px;
+	margin-left: 150px;
+	 animation: animate 3s infinite;
+	
+}
+
+.container{
+  width: 60vh;
+  width: 30vw;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+  z-index: -1;
+}
+
+.box{
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg) rotateX(-55deg);
+  transition: 0.5s;
+}
+
+.card{
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  padding: 100px 0;
+  color: white;
+  background: black;
+  border: 5px solid white;
+  border-radius: 10px;
+  font-size: 32px;
+  box-sizing: border-box;
+  position: absolute;
+}
+#front{
+  transform: translateZ(125px);
+}
+#back{
+  transform: translateZ(-125px);
+}
+#left{
+  right: 125px;
+  transform: rotateY(-90deg);
+}
+#right{
+  left: 125px;
+  transform: rotateY(90deg);
+}
+#top{
+  bottom: 125px;
+  transform: rotateX(90deg);
+}
+#bottom{
+  top: 125px;
+  transform: rotateX(-90deg);
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(70deg);
+  }
+  100%{
+  	transform: translateX(45deg);
+  }
+}
+
+.text{
+	position: absolute;
+	top: -200px;
+	left: 30px;
+	color: white;
+	text-transform: uppercase;
+}
+
+#butt{
+	position: absolute;
+	top: -200px;
+	left: -300px;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 10px;
+	background: lightgray;
+	color: black;
+	cursor: pointer;
+}
+
+.balls{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: white;
+}
+
+#world{
+	z-index: 1000;
+	padding: 2px -3px;
+}
+
+:root {
+	--pixel-size: 5px;
+	--grid-cell: calc( var(--pixel-size) * 16);
+}
+
+.camera{
+	width: calc(var(--pixel-size) * 160);
+	height: calc(var(--pixel-size) * 144);
+	overflow: hidden;
+	background: gray;
+	position: relative;
+}
+
+.map{
+	background-size: 100%;
+	width: calc(13 * var(--grid-cell));
+	height: calc(10 * var(--grid-cell));
+	position: relative;
+}
+
+#test{
+	width: calc( var(--grid-cell)* 1);
+	height: calc( var(--grid-cell)* 1);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: white;
+}
