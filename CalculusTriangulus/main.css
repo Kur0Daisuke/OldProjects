@@ -1,0 +1,40 @@
+
+body{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-family: sans-serif;
+}
+
+select{
+	outline: none;
+	border: none;
+}
+
+#cc{
+  width: 80px;
+  height: 30px;
+  color: #fff;
+  background-color: orange;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+}
+
+#change{
+  background-color: white;
+  color: #fff;
+  border: none;
+  width: 150px;
+  padding: 9px 1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  float: left;
+
+}
+
+#change.active{
+	background: dodgerblue;
+	transition: background 1s;
+}

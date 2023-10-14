@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cT</title>
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="box-1">
+			<h1 class="title">Calculator</h1>
+			<select id="select1">
+				<option>0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+			</select>
+			<select id="operator">
+				<option>+</option>
+				<option>-</option>
+				<option>*</option>
+				<option>/</option>
+			</select>
+			<select id="select2">
+				<option>0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+			</select>
+		</div>
+		<br>
+		<div class="buttons">
+			<button onclick="calculate()" id="cc">calculate</button>
+			<button onclick="stars()">transform into triangles</button>
+		</div>
+		<br>
+		<div class="box-2">
+			<input type="text" id="answer" disabled value="number">
+		</div>
+		<br>
+		<div id="box-3">
+			<p id="transla"></p>
+			<select id="change" onclick="change()" disabled>
+				<option>square</option>
+				<option>triangle</option>
+				<option>mtraingle</option>
+				<option>rtraingle</option>
+				<option>rmtraingle</option>
+				<option>pyramid</option>
+				<option>rpyramid</option>
+				<option>diamond</option>
+				<option>hdiamond</option>
+			</select>
+		</div>
+	</div>
+</body>
+</html>
