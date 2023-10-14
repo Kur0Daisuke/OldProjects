@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TicAtoe</title>
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="ticatoe" id="tic">
+		<div class="choose" id="choose">
+			<div class="p1" id="p1">
+				<h1>PLAYER - 1</h1>
+				<input type="text" name="" id="p1data" maxlength="1">
+			</div>
+			<button id="start" onclick="st()">Start!</button>
+			<div class="p2" id="p2">
+				<h1>PLAYER - 2</h1>
+				<input type="text" name="" id="p2data" maxlength="1">
+			</div>
+			<a href="bot/index.html" id="ai">PvAi</a>
+		</div>
+		<div class="ct">
+			<p id="curr"></p>
+		</div>
+		<div class="blocks" id="bl">
+			<table class="xo">
+				<tr>
+					<td><button onclick="ticatoe(this)" class="b1" id="1" disabled></button></td>
+					<td><button onclick="ticatoe(this)" class="b2" id="2" disabled></button></td>
+					<td><button onclick="ticatoe(this)" class="b3" id="3" disabled></button></td>
+				</tr>
+				<tr>
+					<td><button onclick="ticatoe(this)" class="b4" id="4" disabled></button></td>
+					<td><button onclick="ticatoe(this)" class="b5" id="5" disabled></button></td>
+					<td><button onclick="ticatoe(this)" class="b6" id="6" disabled></button></td>
+				</tr>
+				<tr>
+					<td><button onclick="ticatoe(this)" class="b7" id="7" disabled></button></td>
+					<td><button onclick="ticatoe(this)" class="b8" id="8" disabled></button></td>
+					<td><button onclick="ticatoe(this)" class="b9" id="9" disabled></button></td>
+				</tr>
+			</table>
+			<p id="win"></p>
+			<button onclick="reset()"class="reset" id="r">Reset.</button>
+		</div>
+	</div>
+	<p class="not"></p>
+	<p class="not2"></p>
+</body>
+</html>
