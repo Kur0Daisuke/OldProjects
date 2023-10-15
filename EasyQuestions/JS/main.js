@@ -10,6 +10,7 @@ let mistakes = [], remistake;
 
 //check is where we check the answers and say its correct or not :P
 function check() {
+	toggleConfetti();
 	document.getElementById("container").style.opacity = "0%";
 	document.getElementById("container").style.zIndex = "-1";
 	setTimeout(function(){
